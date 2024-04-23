@@ -1,0 +1,250 @@
+*{
+    box-sizing: border-box;
+    background: black;
+    color: white;
+    /* color: #1aeeef; */
+    
+
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div{
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.container{
+    display: flex;
+    flex-flow: column;
+    place-content: center flex-start;
+    /* align-items: flex-start; */
+    max-width: 800px;
+    min-height: 800px;
+    margin: 0px auto;
+    padding: 32px 8px;
+}
+
+/* edit profile back button */
+
+.back-to-home{
+    margin-bottom: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    /* background-color: rgba(100, 100, 100, .1); */
+}
+
+.back-button{
+    border-radius: 50%;
+    background: white;
+    height: 50px;
+    width: 50px;
+    /* margin: 15px; */
+    transition: 0.4 ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.back-button div{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-top: 5px solid #202020;
+    border-left: 5px solid #202020;
+    transform: rotate(45deg);
+    left: 17px;
+    top: 13.5px;
+    transform: rotate(-45deg);
+    background-color: white;
+    border-radius: 15%;
+}
+
+
+
+.back-button:hover{
+    box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.026);
+}
+
+
+
+/* edit-profile body */
+
+
+h1{
+    margin: 0px;
+    padding-block-end: 32px;
+    display: block;
+}
+
+article{
+    display: block;
+    unicode-bidi: isolate;
+}
+
+label{
+    cursor: default;
+}
+
+.label-none{
+    display: none;
+}
+
+.profile-body{
+    margin-bottom: 72px;
+    inline-size: 100%;
+}
+
+section{
+    display: block;  
+    unicode-bidi: isolate;
+}
+
+.section-header{
+    margin-bottom: 1em;
+    padding: 0px;
+    inline-size: 100%;
+}
+
+/* input{
+    inline-size: 100%;
+} */
+
+.profile-data{
+    padding-block-end: 24px;
+}
+
+.profile-title{
+    font-size: 0.875rem;
+    font-weight: 700px;
+    align-items: center;
+    display: flex;
+    inline-size: 100%;
+    padding-block-end: 8px;
+}
+
+span{
+    display: inline-block;
+}
+
+.user-id{
+    margin-block: 0px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: inherit;
+}
+
+.input-data{
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+    inline-size: 100%;
+    margin-block: 0px;
+    border-radius: 4px;
+    padding-inline-start: 16px;
+    padding-inline-end: 16px;
+    padding-block-start: 12px;
+    padding-block-end: 12px;
+    min-block-size: 48px;
+    border:0;
+    box-shadow:inset 0 0 0 1px #878787;
+    /* box-shadow:inset 0 0 0 1px #09aaaa; */
+    outline: 0;
+    transition: .2s;
+}
+
+.input-data:hover{
+    box-shadow: inset 0 0 0 2px #fff;
+    /* box-shadow: inset 0 0 0 2px #1aeeef; */
+
+
+}
+
+.input-data:focus{
+    box-shadow: inset 0 0 0 3px #fff;
+    /* box-shadow: inset 0 0 0 3px #1aeeef; */
+}
+
+/* .input-data:focus, .input-data:hover:focus{
+    outline: 0px;
+} */
+
+
+.select-tag{
+    position: relative;
+    inline-size: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.select-data{
+    margin-block: 0px;
+    text-indent: 0.01px;
+    block-size: 48px;
+    min-block-size: unset;
+    inline-size: 100%;
+}
+
+.d-m-y{
+    display: flex;
+}
+
+.d-m-y > :first-child {
+    margin-inline-start: 0px;
+}
+
+.d-m-y > *{
+    margin: 2px;
+    flex-grow: 1;
+}
+
+.profile-footer{
+    display: block;
+    text-align: end;
+    padding-top: 34px;
+    margin-top: 34px;
+    align-items: center;
+}
+
+.cancel-button{
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: transparent;
+    border: 0px;
+    border-radius: 9999px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    transition-duration: 33ms;
+    color: #6a6a6a;
+    min-inline-size: 0px;
+    min-block-size: 48px;
+    padding-block-start:8px;
+    padding-block-end: 8px;
+    padding-inline-start: 32px;
+    padding-inline-end:32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: 0.2s;
+}
+
+.save-button{
+    color: white;
+    font-size: 1rem;
+    transition: 0.2s;
+
+}
+
+.cancel-button:hover , .save-button:hover{
+    color: white;
+    font-size: 1.3rem;
+}
+
+
+
+
+
+
